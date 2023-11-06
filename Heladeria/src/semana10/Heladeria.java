@@ -1,3 +1,5 @@
+//metodo con retorno
+
 package semana10;
 
 import java.awt.EventQueue;
@@ -22,7 +24,7 @@ import java.awt.Font;
 
 public class Heladeria extends JFrame implements ActionListener {
 
-	// Declaraci髇 de variables
+	// Declaraci贸n de variables
 	private static final long serialVersionUID = 9206324162700448001L;
 	private JPanel contentPane;
 	private JLabel lblHelado;
@@ -34,7 +36,7 @@ public class Heladeria extends JFrame implements ActionListener {
 	private JScrollPane scpScroll;
 	private JTextArea txtS;
 
-	// Lanza la aplicaci髇
+	// Lanza la aplicaci贸n
 	public static void main(String[] args) {
 		try {
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
@@ -113,7 +115,7 @@ public class Heladeria extends JFrame implements ActionListener {
 		}
 	}
 
-	// Procesa la pulsaci髇 del bot髇 Borrar
+	// Procesa la pulsaci贸n del bot贸n Borrar
 	protected void actionPerformedBtnBorrar(ActionEvent arg0) {
 		txtCantidad.setText("");
 		txtS.setText("");
@@ -121,7 +123,7 @@ public class Heladeria extends JFrame implements ActionListener {
 		txtCantidad.requestFocus();
 	}
 
-	// Procesa la pulsaci髇 del bot髇 Procesar
+	// Procesa la pulsaci贸n del bot贸n Procesar
 	protected void actionPerformedBtnProcesar(ActionEvent arg0) {
 		int     cant = obtenerCantidad();
 		String marca = obtenerMarca();
